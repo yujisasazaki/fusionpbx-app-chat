@@ -1,0 +1,29 @@
+<?php
+
+$y=0;
+$apps[$x]['menu'][$y]['title']['en-us'] = "Chat";
+$apps[$x]['menu'][$y]['title']['en-gb'] = "Chat";
+$apps[$x]['menu'][$y]['title']['ar-eg'] = "Chat";
+$apps[$x]['menu'][$y]['title']['de-at'] = "Chat";
+$apps[$x]['menu'][$y]['title']['de-de'] = "Chat";
+$apps[$x]['menu'][$y]['title']['es-cl'] = "Chat";
+$apps[$x]['menu'][$y]['title']['es-mx'] = "Chat";
+$apps[$x]['menu'][$y]['title']['fr-ca'] = "Chat";
+$apps[$x]['menu'][$y]['title']['fr-fr'] = "Chat";
+$apps[$x]['menu'][$y]['title']['he-il'] = "Chat";
+$apps[$x]['menu'][$y]['title']['it-it'] = "Chat";
+$apps[$x]['menu'][$y]['title']['nl-nl'] = "Chat";
+$apps[$x]['menu'][$y]['title']['pl-pl'] = "Chat";
+$apps[$x]['menu'][$y]['title']['pt-br'] = "Chat";
+$apps[$x]['menu'][$y]['title']['pt-pt'] = "Chat";
+$apps[$x]['menu'][$y]['title']['ro-ro'] = "Chat";
+$apps[$x]['menu'][$y]['title']['ru-ru'] = "Chat";
+$apps[$x]['menu'][$y]['title']['sv-se'] = "Chat";
+$apps[$x]['menu'][$y]['title']['uk-ua'] = "Chat";
+$apps[$x]['menu'][$y]['uuid'] = "ba87501a-7dae-4a27-bc14-19454f9fe835";
+$apps[$x]['menu'][$y]['parent_uuid'] = "fd29e39c-c936-f5fc-8e2b-611681b266b5";
+$apps[$x]['menu'][$y]['category'] = "internal";
+$apps[$x]['menu'][$y]['path'] = "/app/chat/";
+$apps[$x]['menu'][$y]['groups'][] = "superadmin";
+$apps[$x]['menu'][$y]['groups'][] = "admin";
+$apps[$x]['menu'][$y]['groups'][] = "agent";

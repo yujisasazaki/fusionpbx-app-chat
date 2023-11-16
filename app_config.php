@@ -1,0 +1,29 @@
+<?php
+
+$apps[$x]['name'] = "Chat";
+$apps[$x]['uuid'] = "ba87501a-7dae-4a27-bc14-19454f9fe835";
+$apps[$x]['category'] = "CRM";
+$apps[$x]['subcategory'] = "";
+$apps[$x]['version'] = "0.1";
+$apps[$x]['license'] = "Mozilla Public License 1.1";
+$apps[$x]['url'] = "";
+$apps[$x]['description']['en-us'] = "Chat";
+$apps[$x]['description']['en-gb'] = "Chat";
+$apps[$x]['description']['ar-eg'] = "Chat";
+$apps[$x]['description']['de-at'] = "Chat";
+$apps[$x]['description']['de-ch'] = "Chat";
+$apps[$x]['description']['de-de'] = "Chat";
+$apps[$x]['description']['es-cl'] = "Chat";
+$apps[$x]['description']['es-mx'] = "Chat";
+$apps[$x]['description']['fr-ca'] = "Chat";
+$apps[$x]['description']['fr-fr'] = "Chat";
+$apps[$x]['description']['he-il'] = "Chat";
+$apps[$x]['description']['it-it'] = "Chat";
+$apps[$x]['description']['nl-nl'] = "Chat";
+$apps[$x]['description']['pl-pl'] = "Chat";
+$apps[$x]['description']['pt-br'] = "Chat";
+$apps[$x]['description']['pt-pt'] = "Chat";
+$apps[$x]['description']['ro-ro'] = "Chat";
+$apps[$x]['description']['ru-ru'] = "Chat";
+$apps[$x]['description']['sv-se'] = "Chat";
+$apps[$x]['description']['uk-ua'] = "Chat";
