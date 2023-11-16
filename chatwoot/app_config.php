@@ -1,0 +1,29 @@
+<?php
+
+$apps[$x]['name'] = "Chatwoot";
+$apps[$x]['uuid'] = "bce7464e-7749-4450-8ff9-9d9f0adcad79";
+$apps[$x]['category'] = "CRM";
+$apps[$x]['subcategory'] = "";
+$apps[$x]['version'] = "0.1";
+$apps[$x]['license'] = "Mozilla Public License 1.1";
+$apps[$x]['url'] = "";
+$apps[$x]['description']['en-us'] = "Chatwoot";
+$apps[$x]['description']['en-gb'] = "Chatwoot";
+$apps[$x]['description']['ar-eg'] = "Chatwoot";
+$apps[$x]['description']['de-at'] = "Chatwoot";
+$apps[$x]['description']['de-ch'] = "Chatwoot";
+$apps[$x]['description']['de-de'] = "Chatwoot";
+$apps[$x]['description']['es-cl'] = "Chatwoot";
+$apps[$x]['description']['es-mx'] = "Chatwoot";
+$apps[$x]['description']['fr-ca'] = "Chatwoot";
+$apps[$x]['description']['fr-fr'] = "Chatwoot";
+$apps[$x]['description']['he-il'] = "Chatwoot";
+$apps[$x]['description']['it-it'] = "Chatwoot";
+$apps[$x]['description']['nl-nl'] = "Chatwoot";
+$apps[$x]['description']['pl-pl'] = "Chatwoot";
+$apps[$x]['description']['pt-br'] = "Chatwoot";
+$apps[$x]['description']['pt-pt'] = "Chatwoot";
+$apps[$x]['description']['ro-ro'] = "Chatwoot";
+$apps[$x]['description']['ru-ru'] = "Chatwoot";
+$apps[$x]['description']['sv-se'] = "Chatwoot";
+$apps[$x]['description']['uk-ua'] = "Chatwoot";

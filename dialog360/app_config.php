@@ -1,0 +1,29 @@
+<?php
+
+$apps[$x]['name'] = "360Dialog";
+$apps[$x]['uuid'] = "b63144f1-f8f4-48ad-8ad1-6182c57db8b3";
+$apps[$x]['category'] = "CRM";
+$apps[$x]['subcategory'] = "";
+$apps[$x]['version'] = "0.1";
+$apps[$x]['license'] = "Mozilla Public License 1.1";
+$apps[$x]['url'] = "";
+$apps[$x]['description']['en-us'] = "360Dialog";
+$apps[$x]['description']['en-gb'] = "360Dialog";
+$apps[$x]['description']['ar-eg'] = "360Dialog";
+$apps[$x]['description']['de-at'] = "360Dialog";
+$apps[$x]['description']['de-ch'] = "360Dialog";
+$apps[$x]['description']['de-de'] = "360Dialog";
+$apps[$x]['description']['es-cl'] = "360Dialog";
+$apps[$x]['description']['es-mx'] = "360Dialog";
+$apps[$x]['description']['fr-ca'] = "360Dialog";
+$apps[$x]['description']['fr-fr'] = "360Dialog";
+$apps[$x]['description']['he-il'] = "360Dialog";
+$apps[$x]['description']['it-it'] = "360Dialog";
+$apps[$x]['description']['nl-nl'] = "360Dialog";
+$apps[$x]['description']['pl-pl'] = "360Dialog";
+$apps[$x]['description']['pt-br'] = "360Dialog";
+$apps[$x]['description']['pt-pt'] = "360Dialog";
+$apps[$x]['description']['ro-ro'] = "360Dialog";
+$apps[$x]['description']['ru-ru'] = "360Dialog";
+$apps[$x]['description']['sv-se'] = "360Dialog";
+$apps[$x]['description']['uk-ua'] = "360Dialog";
