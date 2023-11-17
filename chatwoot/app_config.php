@@ -28,6 +28,15 @@ $apps[$x]['description']['ru-ru'] = "Chatwoot";
 $apps[$x]['description']['sv-se'] = "Chatwoot";
 $apps[$x]['description']['uk-ua'] = "Chatwoot";
 
+//permission details
+$y=0;
+$apps[$x]['permissions'][$y]['name'] = "chatwoot_view";
+$apps[$x]['permissions'][$y]['menu']['uuid'] = "5061da10-1c7f-4aab-8132-b50afa857a09";
+$apps[$x]['permissions'][$y]['groups'][] = "superadmin";
+$y++;
+$apps[$x]['permissions'][$y]['name'] = "chatwoot_edit";
+$apps[$x]['permissions'][$y]['groups'][] = "superadmin";
+
 //default settings
 $y=0;
 $apps[$x]['default_settings'][$y]['default_setting_uuid'] = "d28b319b-f96c-4d2c-b0a0-b1a36b5defbb";
