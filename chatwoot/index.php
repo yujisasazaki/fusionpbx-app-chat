@@ -28,6 +28,7 @@
 //includes
 require_once dirname(__DIR__, 2) . "/resources/require.php";
 require_once "resources/check_auth.php";
+require "resources/chatwoot.php";
 
 //check permissions
 if (permission_exists('chatwoot_view')) {
@@ -36,6 +37,17 @@ if (permission_exists('chatwoot_view')) {
 else {
 	echo "access denied";
 	exit;
+}
+
+//verify if the platform user exists
+if (!$platform_user_exists) {
+    if (permission_exists('chatwoot_admin')) {
+        header('Location: chatwoot_platform_user.php');
+        exit;
+    } else {
+        echo "chatwoot not configured, contact your administrator";
+        exit;
+    }
 }
 
 //load chatwoot_account
@@ -65,7 +77,9 @@ require_once "resources/header.php";
         <?php endif; ?>
     </div>
     <div class="actions">
-        <?= button::create(['type'=>'button','label'=>$text['title-chatwoot_platform_user'],'link'=>'chatwoot_platform_user.php']); ?>
+        <?php if (permission_exists('chatwoot_admin')): ?>
+            <?= button::create(['type'=>'button','label'=>$text['title-chatwoot_platform_user'],'link'=>'chatwoot_platform_user.php']); ?>
+        <?php endif; ?>
     </div>
 </div>
 
