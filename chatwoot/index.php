@@ -56,13 +56,18 @@ require_once "resources/header.php";
 
 ?>
 
-<?php if ($not_found): ?>
-    <b>Error getting Chatwoot Account</b>
-<?php else : ?>
+<div class="action_bar" id="action_bar">
     <div class="heading">
-        <b><?= $text['title-chatwoot'] ?> ID: <?= $account_id ?></b>
+        <?php if ($not_found): ?>
+            <b>Error getting Chatwoot Account</b>    
+        <?php else : ?>
+            <b><?= $text['title-chatwoot'] ?> ID: <?= $account_id ?></b>
+        <?php endif; ?>
     </div>
-<?php endif; ?>
+    <div class="actions">
+        <?= button::create(['type'=>'button','label'=>$text['title-chatwoot_platform_user'],'link'=>'chatwoot_platform_user.php']); ?>
+    </div>
+</div>
 
 <?php
 //include the footer
