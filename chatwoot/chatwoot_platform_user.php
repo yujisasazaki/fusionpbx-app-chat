@@ -31,7 +31,7 @@ require_once "resources/check_auth.php";
 require "resources/chatwoot.php";
 
 //check permissions
-if (permission_exists('chatwoot_edit')) {
+if (permission_exists('chatwoot_admin')) {
 	//access granted
 }
 else {

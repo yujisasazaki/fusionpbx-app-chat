@@ -33,8 +33,13 @@ $y=0;
 $apps[$x]['permissions'][$y]['name'] = "chatwoot_view";
 $apps[$x]['permissions'][$y]['menu']['uuid'] = "5061da10-1c7f-4aab-8132-b50afa857a09";
 $apps[$x]['permissions'][$y]['groups'][] = "superadmin";
+$apps[$x]['permissions'][$y]['groups'][] = "admin";
 $y++;
 $apps[$x]['permissions'][$y]['name'] = "chatwoot_edit";
+$apps[$x]['permissions'][$y]['groups'][] = "superadmin";
+$apps[$x]['permissions'][$y]['groups'][] = "admin";
+$y++;
+$apps[$x]['permissions'][$y]['name'] = "chatwoot_admin";
 $apps[$x]['permissions'][$y]['groups'][] = "superadmin";
 
 //default settings
