@@ -50,12 +50,21 @@ if (!$platform_user_exists) {
     }
 }
 
-//load chatwoot_account
+//load domain chatwoot_account
+$chatwoot_account_exists = false;
 $chatwoot_account = chatwoot_account::get_domain_account();
-if ($chatwoot_account === false) {
-    $not_found = true;
-} else {
+if ($chatwoot_account instanceof chatwoot_account) {
     $account_id = $chatwoot_account->get_account_id();
+    $chatwoot_account_exists = true;
+} else {
+    //create domain chatwoot_account
+    $chatwoot_account = chatwoot_account::create();
+    if ($chatwoot_account instanceof chatwoot_account) {
+        $account_id = $chatwoot_account->get_account_id();
+        $chatwoot_account_exists = true;
+    } else {
+        //error creating chatwoot_account
+    }    
 }
 
 //add multi-lingual support
@@ -65,12 +74,10 @@ $text = $language->get();
 //show content
 $document['title'] = $text['title-chatwoot'];
 require_once "resources/header.php";
-
 ?>
-
 <div class="action_bar" id="action_bar">
     <div class="heading">
-        <?php if ($not_found): ?>
+        <?php if (!$chatwoot_account_exists): ?>
             <b>Error getting Chatwoot Account</b>    
         <?php else : ?>
             <b><?= $text['title-chatwoot'] ?> ID: <?= $account_id ?></b>
@@ -82,7 +89,6 @@ require_once "resources/header.php";
         <?php endif; ?>
     </div>
 </div>
-
 <?php
 //include the footer
 require_once "resources/footer.php";
