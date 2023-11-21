@@ -49,3 +49,14 @@ if (isset($_SESSION['chatwoot']['platform_user']['user_id'])
     }
     unset($sql, $database, $result);
 }
+
+//load domain chatwoot account
+if (!isset($_SESSION['chatwoot']['account']['domain_uuid'])
+    || $_SESSION['chatwoot']['account']['domain_uuid'] !==  $_SESSION['domain_uuid']
+) {
+    $chatwoot_account = chatwoot_account::get_domain_account();
+    if ($chatwoot_account instanceof chatwoot_account) {
+        $_SESSION['chatwoot']['account']['id'] = $chatwoot_account->get_account_id();
+        $_SESSION['chatwoot']['account']['domain_uuid'] =  $_SESSION['domain_uuid'];
+    }
+}
