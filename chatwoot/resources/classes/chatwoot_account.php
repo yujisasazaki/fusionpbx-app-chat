@@ -41,7 +41,7 @@ if (!class_exists('chatwoot_account')) {
         }
 
         /**
-         * Creates chatwoot account and the account user on Chatwoot and saves the account_id on Fusion
+         * Creates chatwoot account and the fusionpbx account user on Chatwoot and saves the account_id on Fusion
          * @return chatwoot_account|bool Returns the chatwoot_account on successfull creation or false if encounters any errors
          */
         public static function create() {
