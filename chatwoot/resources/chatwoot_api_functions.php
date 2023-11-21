@@ -188,7 +188,7 @@ if (!function_exists('chatwoot_system_request')) {
         $token_type = explode("/", $path)[1];
 
         if ($token_type === "api") {
-            $api_access_token = $_SESSION['chat']['user_access_token']['text'];
+            $api_access_token = $_SESSION['chatwoot_platform_user']['access_token'];
         } elseif ($token_type === "platform") {
             $api_access_token = $_SESSION['chat']['platform_access_token']['text'];
         }
