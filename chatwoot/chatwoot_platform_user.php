@@ -139,7 +139,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST' && !$platform_user_exists) {
 
 //load platform user details
 if ($platform_user_exists) {
-    $platform_user = get_user($_SESSION['chatwoot_platform_user']['user_id']);
+    $platform_user = get_user($_SESSION['chatwoot']['platform_user']['user_id']);
 } else {
     //create token
     $object = new token;

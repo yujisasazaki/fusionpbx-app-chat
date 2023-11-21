@@ -29,8 +29,8 @@ require_once "chatwoot_api_functions.php";
 
 //verify if the platform user exists
 $platform_user_exists = false;
-if (isset($_SESSION['chatwoot_platform_user']['user_id'])
-    && isset($_SESSION['chatwoot_platform_user']['access_token'])
+if (isset($_SESSION['chatwoot']['platform_user']['user_id'])
+    && isset($_SESSION['chatwoot']['platform_user']['access_token'])
 ) {
     $platform_user_exists = true;   
 } else {
@@ -44,8 +44,8 @@ if (isset($_SESSION['chatwoot_platform_user']['user_id'])
 
     if (!empty($result)) {
         $platform_user_exists = true;
-        $_SESSION['chatwoot_platform_user']['user_id'] = $result['user_id'];
-        $_SESSION['chatwoot_platform_user']['access_token'] = $result['access_token'];
+        $_SESSION['chatwoot']['platform_user']['user_id'] = $result['user_id'];
+        $_SESSION['chatwoot']['platform_user']['access_token'] = $result['access_token'];
     }
-    unset($sql, $database);
+    unset($sql, $database, $result);
 }

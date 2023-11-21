@@ -58,7 +58,7 @@ if (!class_exists('chatwoot_account')) {
 
         private static function create_on_chatwoot() {
             $account_id = create_account($_SESSION['domain_name']);
-            $account_user = create_account_user($account_id, $_SESSION['chatwoot_platform_user']['user_id'], 'administrator');
+            $account_user = create_account_user($account_id, $_SESSION['chatwoot']['platform_user']['user_id'], 'administrator');
 
             //deletes account if we couldn't create the account user
             if (!$account_user->id > 0) {
