@@ -50,17 +50,16 @@ if (!$platform_user_exists) {
     }
 }
 
-//load domain chatwoot_account
+//check if there is a domain account
 $chatwoot_account_exists = false;
-$chatwoot_account = chatwoot_account::get_domain_account();
-if ($chatwoot_account instanceof chatwoot_account) {
-    $account_id = $chatwoot_account->get_account_id();
+if (isset($_SESSION['chatwoot']['account']['id'])) {
     $chatwoot_account_exists = true;
 } else {
     //create domain chatwoot_account
     $chatwoot_account = chatwoot_account::create();
     if ($chatwoot_account instanceof chatwoot_account) {
-        $account_id = $chatwoot_account->get_account_id();
+        $_SESSION['chatwoot']['account']['id'] = $chatwoot_account->get_account_id();
+        $_SESSION['chatwoot']['account']['domain_uuid'] =  $_SESSION['domain_uuid'];
         $chatwoot_account_exists = true;
     } else {
         //error creating chatwoot_account
@@ -80,7 +79,7 @@ require_once "resources/header.php";
         <?php if (!$chatwoot_account_exists): ?>
             <b>Error getting Chatwoot Account</b>    
         <?php else : ?>
-            <b><?= $text['title-chatwoot'] ?> ID: <?= $account_id ?></b>
+            <b><?= $text['title-chatwoot'] ?> ID: <?= $_SESSION['chatwoot']['account']['id'] ?></b>
         <?php endif; ?>
     </div>
     <div class="actions">
